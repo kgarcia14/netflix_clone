@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 30px 20px;
+}
+
+h2 {
+    color: #fff;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 5px;
+}
+
+img {
+    width: 130px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
