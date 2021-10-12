@@ -1,4 +1,4 @@
-import '../row.css';
+import '../styles.css';
 import { useState, useEffect } from "react";
 import axios from '../axios';
 
@@ -17,12 +17,12 @@ const Row = ({title, fetchData}) => {
     console.log();
 
     return ( 
-        <div className="container">
-            <h2>{title}</h2>
+        <div className="row-container">
+            <h3>{title}</h3>
             <ul>
                 {movies.map((movie) => (
                     <li key={movie.id}>
-                        <img src={`${baseImgUrl}${movie.poster_path}`}alt={movie.name ? movie.name : movie.original_title}></img>
+                        <img className="row-img" src={`${baseImgUrl}${movie.poster_path}`}alt={movie.name ? movie.name : movie.original_title}></img>
                     </li>
                 ))}
             </ul>
