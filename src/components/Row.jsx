@@ -19,7 +19,7 @@ const Row = ({title, fetchData}) => {
     return ( 
         <div className="row-container">
             <h3>{title}</h3>
-            <ul>
+            <ul className="row-wrapper">
                 {movies.map((movie) => (
                     <li key={movie.id}>
                         <img className="row-img" src={`${baseImgUrl}${movie.poster_path}`}alt={movie.name ? movie.name : movie.original_title}></img>
