@@ -3,13 +3,13 @@ import './styles.css';
 import requests from './requests';
 import Row from './components/Row';
 import Hero from './components/Hero';
-import NewNavbar from './components/NewNavbar';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <NewNavbar />
+      <Navbar />
       <Hero fetchData={requests.getTrending}/>
       <div className="group-of-rows">
         <Row title={'Trending Now'} fetchData={requests.getTrending} />
