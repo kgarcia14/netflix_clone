@@ -2,7 +2,6 @@ import '../styles.css';
 import axios from '../axios';
 import { useEffect, useState } from 'react';
 
-
 const Hero = ({fetchData}) => {
     const [movie, setMovie] = useState([]);
     const baseImgUrl = 'https://image.tmdb.org/t/p/original';
@@ -13,9 +12,9 @@ const Hero = ({fetchData}) => {
             setMovie(response.data.results[Math.floor(Math.random()*response.data.results.length)]);
         }
         fetch()
-    },[fetchData])
-    console.log(movie);
+    },[fetchData]);
 
+    // SHORTENS MOVIE DESCRIPTION
     const truncate = (str, n) => {
         return str?.length > n ? str.substr(0, n - 1) + '...' : str;
     }
@@ -25,7 +24,7 @@ const Hero = ({fetchData}) => {
         <div 
             className="hero-container"
             style={{
-                backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url("${baseImgUrl}${movie.backdrop_path}")`
+                backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("${baseImgUrl}${movie.backdrop_path}")`
             }}>
             <div className="hero-content">
                 <h2 className="hero-h2">{movie.name ? movie.name : movie.original_title}</h2>

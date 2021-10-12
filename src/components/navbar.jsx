@@ -23,8 +23,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="profile">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-bell"></i>
+                <i className="fas fa-search"></i>
+                <i className="fas fa-bell"></i>
                 <img className="profile-avatar" src="../../../images/profile_avatar.png" alt="profile avatar"></img>
             </div>
         </div>
