@@ -4,7 +4,7 @@ import axios from '../axios';
 
 const Row = ({title, fetchData}) => {
     const [movies, setMovies] = useState([]);
-    const baseImgUrl = 'https://image.tmdb.org/t/p/w500';
+    const baseImgUrl = 'https://image.tmdb.org/t/p/original';
 
     useEffect(() => {
         const fetch = async () => {
@@ -13,8 +13,6 @@ const Row = ({title, fetchData}) => {
         }
         fetch();
     }, [fetchData])
-    console.log(movies);
-    console.log();
 
     return ( 
         <div className="row-container">

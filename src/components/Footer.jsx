@@ -2,10 +2,10 @@ const Footer = () => {
     return ( 
         <div className="footer-container">
             <div className="social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-youtube"></i>
+                <i className="fab fa-facebook-square"></i>
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-youtube"></i>
             </div>
             <div className="link-container">
                 <div className="link-wrapper link1">
