@@ -22,13 +22,18 @@ const Hero = ({fetchData}) => {
    
     
     return ( 
-        <div className="hero-container">
+        <div 
+            className="hero-container"
+            style={{
+                backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url("${baseImgUrl}${movie.backdrop_path}")`
+            }}>
             <div className="hero-content">
                 <h2 className="hero-h2">{movie.name ? movie.name : movie.original_title}</h2>
-                <p className="hero-p">{truncate(movie.overview, 125)}</p>
-            </div>
-            <div className="hero-img-wrapper">
-                <img className="hero-img"src={`${baseImgUrl}${movie.backdrop_path}`}alt={movie.name ? movie.name : movie.original_title}></img>
+                <p className="hero-p">{truncate(movie.overview, 135)}</p>
+                <div className="hero-btn-wrapper">
+                    <button className="play-btn"><i className="fas fa-play"></i>Play</button>
+                    <button className="more-info-btn"><i className="fas fa-info-circle"></i>More Info</button>
+                </div>
             </div>
         </div>
      );
