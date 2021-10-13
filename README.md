@@ -2,7 +2,7 @@
 ##### *[Click Here](https://chillclone.kurtisgarcia.dev) for live site*
 Although the user cannot actually watch any of the shows or movies, the purpose of this project is to allow users to browse different shows and movies based on what is currently trending, netflix originals, genres, etc. I tried to get as close to the Netflix UI as possible.
 
-## Motivation
+### Motivation
 I wanted to build a project using the "The Movie DB" API and figured what better movie project than a netflix clone.
 
 
