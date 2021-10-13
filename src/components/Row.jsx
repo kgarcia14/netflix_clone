@@ -13,7 +13,7 @@ const Row = ({title, fetchData}) => {
         }
         fetch();
     }, [fetchData])
-
+    console.log(movies);
     return ( 
         <div className="row-container">
             <h3>{title}</h3>
